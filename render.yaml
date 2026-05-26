@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rag-project
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+    disk:
+      name: rag-storage
+      mountPath: /app/chroma_db
+      sizeGB: 1
