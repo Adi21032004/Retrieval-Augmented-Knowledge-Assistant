@@ -1,0 +1,17 @@
+anthropic
+openai
+llama-index
+llama-index-embeddings-openai
+llama-index-llms-anthropic
+llama-index-vector-stores-chroma
+llama-index-embeddings-huggingface
+llama-index-llms-groq
+sentence-transformers
+groq
+chromadb
+pymupdf
+python-docx
+fastapi
+uvicorn[standard]
+python-dotenv
+tiktoken
