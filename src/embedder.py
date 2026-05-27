@@ -19,10 +19,10 @@ EMBEDDING_MODEL   = "text-embedding-3-small"  # Best balance of cost vs quality
 def get_embedding_model():
     """Initialize free local HuggingFace embedding model."""
     embed_model = HuggingFaceEmbedding(
-        model_name="BAAI/bge-small-en-v1.5"  # Fast, high quality, free
+        model_name="all-MiniLM-L6-v2"  # Fast, high quality, free
     )
     Settings.embed_model = embed_model
-    print("✅ Embedding model ready: BAAI/bge-small-en-v1.5 (local, free)")
+    print("✅ Embedding model ready: all-MiniLM-L6-v2 (local, free)")
     return embed_model
 
 
